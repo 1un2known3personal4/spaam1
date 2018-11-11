@@ -36,6 +36,23 @@ client.user.setGame("- Mál , Ënđ 🔱");
 
 
 
+    client.on('message', message => {
+        if (message.author.bot) return;
+        if (!message.content.startsWith(prefix)) return;
+      
+        let command = message.content.split(" ")[0];
+        command = command.slice(prefix.length);
+      
+      
+      let args = message.content.split(" ").slice(1);
+      let x = args.join(" ")
+        if(message.content.startsWith('say')) {
+            message.channel.send(''+x);
+                message.delete(999)
+        }
+        
+       
+      });
 
 
 
@@ -43,7 +60,7 @@ client.user.setGame("- Mál , Ënđ 🔱");
 
 var ServerID = "504686233931218965"; //اي دي السيرفر
 var ChannelID = "509035787950751744";// اي دي الروم
-const prefix = '5'
+const prefix = '1'
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
@@ -68,3 +85,7 @@ client.on('reconnecting', () => console.log('PROBOT credits miner is reconnectin
 
 
     });
+
+
+
+client.login(process.env.BOT_TOKEN);
