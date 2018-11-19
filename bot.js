@@ -36,7 +36,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if(message.content === '-ريب'){
-        message.channel.send('#rep 316324088865882142')
+        message.channel.send('#rep @End , Bé#1273 ')
     }
 });
 
@@ -62,7 +62,7 @@ client2.on('message', message => {
 
 client2.on('message', message => {
     if(message.content === '-ريب'){
-        message.channel.send('#rep 316324088865882142')
+        message.channel.send('#rep @End , Bé#1273 ')
     }
 });
 
