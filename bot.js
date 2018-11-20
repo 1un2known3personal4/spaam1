@@ -1,4 +1,4 @@
-﻿const Discord = require("discord.js");
+const Discord = require("discord.js");
 const client = new Discord.Client();
 const client2 = new Discord.Client();
 
@@ -15,7 +15,7 @@ client.on('ready', () => {
 });
 
 client.on('message', msg =>{
-        let args = msg.content.split(' ').slice(1);
+        let args = msg.content.slice(4);
   if (msg.author.id !== '316324088865882142') return;
   if (msg.content.startsWith('say')) {
    msg.channel.send(args)   
@@ -23,25 +23,19 @@ client.on('message', msg =>{
 })
 
 client.on('message', message => {
-    if(message.content === '-راتب'){
+    if(message.content === 'راتب'){
         message.channel.send('#daily')
     }
 });
 
 client.on('message', message => {
-    if(message.content === '-مبلغ'){
+    if(message.content === 'كريدتس'){
         message.channel.send('#credits')
-    }
-});
-
-client.on('message', message => {
-    if(message.content === '-ريب'){
-        message.channel.send('#rep @End , Bé#1273 ')
     }
 });
 
 client2.on('message', msg =>{
-        let args = msg.content.split(' ').slice(1);
+        let args = msg.content.slice(4);
   if (msg.author.id !== '316324088865882142') return;
   if (msg.content.startsWith('say')) {
    msg.channel.send(args)   
@@ -49,24 +43,16 @@ client2.on('message', msg =>{
 })
 
 client2.on('message', message => {
-    if(message.content === '-راتب'){
+    if(message.content === 'راتب'){
         message.channel.send('#daily')
     }
 });
 
 client2.on('message', message => {
-    if(message.content === '-مبلغ'){
+    if(message.content === 'كريدتس'){
         message.channel.send('#credits')
     }
 });
-
-client2.on('message', message => {
-    if(message.content === '-ريب'){
-        message.channel.send('#rep @End , Bé#1273 ')
-    }
-});
-
-
 
 client.on('message', message => { // لا تغير شئ عشان ما تخرب الدنيا
 if (message.content === '!spam') {
