@@ -1,21 +1,13 @@
 var ServerID = "514903369244999680";
 var ChannelID = "519195090204491776";
 const Discord = require('discord.js');
-
 const client = new Discord.Client();
-
 const c = new Discord.Client();
-
 const d = new Discord.Client(); 
-
 const e = new Discord.Client();
-
 const f = new Discord.Client();
-
 const g = new Discord.Client();
-
 const h = new Discord.Client();
-
 const prefix = '!';
 
 client.on('warn', console.warn);
@@ -287,6 +279,7 @@ function timerFuncf() {
 
     });
 }
+
 
 f.on('message', message => {
 
